@@ -1,4 +1,4 @@
-/*package com.feelbat.entity;
+package com.feelbat.entity;
 
 import java.util.Set;
 
@@ -13,10 +13,10 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
-*//**
+/**
  * 微信用户表
  *  @author  mike
- *//*
+ */
 @Entity
 @Table(name = "t2_user")
 public class UserEntity  implements java.io.Serializable {
@@ -62,7 +62,7 @@ public class UserEntity  implements java.io.Serializable {
 	}
 
 	@ManyToOne
-    @JoinColumn(name="gid",referencedColumnName="gid")
+    @JoinColumn(name="gid")
 	public GroupEntity getGroup() {
 		return group;
 	}
@@ -94,4 +94,4 @@ public class UserEntity  implements java.io.Serializable {
 	
 	
 	
-}*/
+}

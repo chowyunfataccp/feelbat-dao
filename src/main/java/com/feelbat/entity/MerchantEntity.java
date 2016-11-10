@@ -1,4 +1,4 @@
-/*package com.feelbat.entity;
+package com.feelbat.entity;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,10 +12,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
-*//**
+/**
  * 广告商户表
  *  @author  mike
- *//*
+ */
 @Entity
 @Table(name = "t3_merchant")
 public class MerchantEntity  implements java.io.Serializable {
@@ -71,7 +71,7 @@ public class MerchantEntity  implements java.io.Serializable {
 	}
 
 	@ManyToOne
-    @JoinColumn(name="groupid",referencedColumnName="groupid")
+    @JoinColumn(name="groupid")
 	public GroupEntity getGroup() {
 		return group;
 	}
@@ -82,7 +82,7 @@ public class MerchantEntity  implements java.io.Serializable {
 	}
 
 	@ManyToOne
-    @JoinColumn(name="userid",referencedColumnName="userid")
+    @JoinColumn(name="userid")
 	public UserEntity getUser() {
 		return user;
 	}
@@ -95,4 +95,4 @@ public class MerchantEntity  implements java.io.Serializable {
 	
 	
 	
-}*/
+}

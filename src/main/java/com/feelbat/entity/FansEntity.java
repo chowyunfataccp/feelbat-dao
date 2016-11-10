@@ -1,4 +1,4 @@
-/*package com.feelbat.entity;
+package com.feelbat.entity;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,10 +15,10 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
-*//**
+/**
  * 粉丝表（广告商-粉丝关系表）
  *  @author  mike
- *//*
+ */
 @Entity
 @Table(name = "t4_menu")
 public class FansEntity  implements java.io.Serializable {
@@ -42,7 +42,7 @@ public class FansEntity  implements java.io.Serializable {
 	}
 
 	@ManyToOne
-    @JoinColumn(name="merchantid",referencedColumnName="merchantid")
+    @JoinColumn(name="merchantid")
 	public MerchantEntity getMerchant() {
 		return merchant;
 	}
@@ -52,7 +52,7 @@ public class FansEntity  implements java.io.Serializable {
 	}
 
 	@ManyToOne
-    @JoinColumn(name="userid",referencedColumnName="userid")
+    @JoinColumn(name="userid")
 	public UserEntity getUser() {
 		return user;
 	}
@@ -64,4 +64,4 @@ public class FansEntity  implements java.io.Serializable {
 	
 	
 	
-}*/
+}
